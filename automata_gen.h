@@ -1,8 +1,9 @@
 #ifndef AUTOMATA_GEN
 #define AUTOMATA_GEN
 
-#include<vector>
 #include<iostream>
+#include<string>
+#include<vector>
 
 
 class Automata {
@@ -15,6 +16,9 @@ public:
 
     //Print the transition table of a DFA
     void print();
+
+    //Run the DFA on a word and return the final state
+    int run(std::string input, bool do_print=false);
 };
 
 #endif
